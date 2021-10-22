@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2do Ciclo Internacional de Conferencias Virtuales y Encuentro de CA</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="./contador.css">
+    <link rel="stylesheet" type="text/css" href="./seccion.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="./img/1-03.png" alt="">
+            </div>
+            <div class="navegacion">
+                <a href="index.html">Inicio</a>
+                <a href="ad.html">Acerca de</a>
+                <a href="convoca.html">Trabajos libres</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    
+   
+    <br>
+      <br>   <br>   <br>
+      <center> <img src="./programa.png" width="100%"></center>
+
+      <div class="mytabs">
+
+
+
+    <input type="radio" id="tabfree" name="mytabs" checked="checked">
+    <label for="tabfree">22 y 23 de Noviembre</label>
+    <div class="tab">
+              <center><img src="./TALLERES.jpg" width="800" ></center>
+
+     
+      
+    </div>
+
+    
+
+    <input type="radio" id="tabgold" name="mytabs">
+    <label for="tabgold">24 de Noviembre</label>
+    <div class="tab">
+       <center><img src="./PONENCIAS_01.jpg" width="800" ></center>
+    </div>
+
+    <input type="radio" id="tab4" name="mytabs">
+    <label for="tab4">25 de Noviembre</label>
+    <div class="tab">
+      <center><img src="./PONENCIAS_02.jpg" width="800" ></center>
+    </div>
+
+
+    <input type="radio" id="tab5" name="mytabs">
+    <label for="tab5">26 de Noviembre</label>
+    <div class="tab">
+       <center><img src="./PONENCIAS_03.jpg" width="800" ></center>
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+ <footer>
+  
+  <img src="./p1_1.png"  width="100%" >
+</footer> 
+</html>
+<style>
+  body {
+    
+    font-family: 'Roboto', sans-serif;
+}
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 913px;
+    margin: 50px auto;
+    padding: 25px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    background: #2c6572;
+    font-weight: bold;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: #ededed;
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #eea120;
+}
+</style>
